@@ -1,0 +1,22 @@
+{
+  "name": "miss_scarlett",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alonaviv/miss_scarlet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alonaviv/miss_scarlet/issues"
+  },
+  "homepage": "https://github.com/alonaviv/miss_scarlet#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
