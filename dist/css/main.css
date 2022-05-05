@@ -1,0 +1,81 @@
+.container {
+  margin: auto;
+  overflow: hidden;
+  max-width: 500px;
+  padding: 0 20rem; }
+
+:root {
+  font-size: 6.25%; }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 16rem;
+  font-family: "Open Sans", sans-serif;
+  background: #fff;
+  color: #333;
+  line-height: 1.6; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#navbar {
+  height: 160rem;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Amanda Signature', sans-serif;
+  padding: 10rem;
+  background-image: url("../img/purple-background.jpeg");
+  background-position: center 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: #333 solid 1px;
+  color: #fff;
+  filter: brightness(120%); }
+
+#navbar-top .nav-title {
+  background-image: url("../img/logo/stars.png");
+  background-repeat: no-repeat;
+  background-size: 70% 100%;
+  background-position: center;
+  text-align: center;
+  padding: 5rem 0;
+  font-size: 25px;
+  text-shadow: 1px 2px 8px #FFC300; }
+
+#navbar-middle {
+  display: flex;
+  justify-content: space-between; }
+  #navbar-middle .nav-hamburger-container {
+    width: 33%; }
+  #navbar-middle .nav-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 33%; }
+    #navbar-middle .nav-logo img {
+      height: 70rem;
+      width: 70rem; }
+  #navbar-middle .nav-links-container {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #navbar-middle .nav-links-container .nav-links {
+      display: flex;
+      justify-content: space-around;
+      width: 80%;
+      padding: 0 15rem 0 0; }
+
+#navbar-bottom .logo-tagline {
+  text-align: center; }
+  #navbar-bottom .logo-tagline .logo-em {
+    color: #f20c68;
+    font-size: 20px; }
