@@ -36,15 +36,14 @@ a {
     height: 160rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     font-family: 'Amanda Signature', sans-serif;
-    padding: 10rem;
-    background-image: url('../img/purple-background.jpeg');
-    background-position: center 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
+    padding: 5rem 10rem;
+    // background: linear-gradient(41deg, rgba(181,23,228,1) 15%, rgba(222,156,242,1) 65%, rgba(193,153,10,1) 100%);
+    // background-color: $banner-bg-color1;
+    background: linear-gradient(135deg, $banner-bg-color1 0%, $banner-bg-color2 100%);
     border-bottom: #333 solid 1px;
-    color: #fff;
-    filter: brightness(120%);
+    color: #000;
 }
 
 #navbar-top {
@@ -54,9 +53,12 @@ a {
         background-size: 70% 100%;
         background-position: center;
         text-align: center;
+        filter: brightness(130%);
+        filter: sepia(40%);
         padding: 5rem 0;
         font-size: 25px;
-        text-shadow: 1px 2px 8px #FFC300;
+        text-shadow: 0 0  8px #fff000;
+        font-weight: 200;
     }
 }
 
@@ -69,16 +71,19 @@ a {
         width: 33%;
     }
 
-    .nav-logo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+    .nav-img-container {
         width: 33%;
 
-        img {
+        .img-container {
+            background-image: url("../img/logo/castle-bag.jpeg");
             height: 70rem;
             width: 70rem;
+            border-radius: 50%;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-size: 120%;
+            background-position: 53% 23%;
+            border: #fff solid 2px;
         }
     }
 
