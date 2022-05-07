@@ -4,3 +4,18 @@
     max-width: $website-width;
     padding: 0 20rem;
 }
+
+
+.bottom-line {
+    height: 2px;
+    width: 60rem;
+    background: $secondary-color;
+    display: block;
+    margin: 0 auto 1rem auto;
+
+}
+
+.noscroll {
+    position: fixed;
+    overflow: hidden;
+}
