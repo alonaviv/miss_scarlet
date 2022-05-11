@@ -1,54 +1,84 @@
 // Menu Overlay
 
-#main-header {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
 
-#menu-overlay{
+#main-header{
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
     height: 100%;
+    width: 100%;
+}
+
+#menu-container{
+    transition: opacity 0.3s linear;
+}
+
+    
+#overlay {
+    position: fixed;
+    width: 500vh;
+    height: 500vh;
+    top: -100vh;
+    left: -250vh;
+    background: $banner-bg-color1;
     z-index: 2;
+    transition: transform 1.5s linear;
+    border-radius: 50%;
+    transform: translateX(-250vh) translateY(-250vh);
+    opacity: 90%;
+}
+
+#menu{
+    pointer-events: none;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+
+    z-index: 4;
+    opacity: 0;
+    transition: opacity 0.2s linear 0.4s;
+}
+
+
+#menu-content{
+    padding-top: 40%;
+    margin-bottom: 20%;
+    width: 100%;
+    height: auto;
+
+
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    // visibility: hidden;
+    text-align: center;
 
-    .menu-container {
-        position: absolute;
-        background: $banner-bg-color1;
-        opacity: 0.9;
-        height: 200vh;
-        width: 200vw;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        // transform: scale(0);
-        transition: transform 0.4s ease-in;
-        border-radius: 50%;
 
-        .menu-content{
-            margin-top: 30vh;
-            padding: 10rem 0;
+    .close-btn {
+        color: $secondary-color;
+        margin-top: 10rem;
+    }
 
-            .menu-categories{
-                margin-top: 10rem;
-                h1 {
-                    border-bottom: solid 1rem $secondary-color;
-                }
-                .menu-item {
-                    padding: 5rem 0;
-                }
-            }
+    .menu-categories{
+        padding: 10rem 0;
+        margin-top: 20%;
+
+        h2 {
+            display: inline-block;
+            margin-bottom: 5rem;
         }
 
+        ul{
+            margin-top: 15rem;
 
+            .menu-item {
+                padding: 5rem 0;
+            }
+        }
     }
+
+
 }
 
 .main-header {
@@ -59,7 +89,6 @@
 #navbar {
     position: fixed;
     top: 0;
-    left: 0;
     height: $nav-bar-height;
     width: 100%;
     display: flex;
@@ -68,8 +97,6 @@
     font-family: 'Amanda Signature', sans-serif;
     padding: 5rem 10rem;
     margin-bottom: 10rem;
-    // background: linear-gradient(41deg, rgba(181,23,228,1) 15%, rgba(222,156,242,1) 65%, rgba(193,153,10,1) 100%);
-    // background-color: $banner-bg-color1;
     background: linear-gradient(135deg, $banner-bg-color1 0%, $banner-bg-color2 100%);
     border-bottom: #333 solid 1px;
     color: #000;
@@ -105,20 +132,6 @@
             margin: 0 auto 0 5%;
             position: relative;
 
-            .toggler{
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                margin: auto;
-                width: 70%;
-                height: 70%;
-                z-index: 2;
-                cursor: pointer;
-                opacity: 0;
-                
-            }
             .hamburger {
                 position: absolute;
                 left: 0;
@@ -192,6 +205,10 @@
             justify-content: space-around;
             width: 80%;
             padding: 0 15rem 0 0;
+
+            i {
+                color: $secondary-color;
+            }
         }
     }
 }
