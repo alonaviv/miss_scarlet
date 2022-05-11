@@ -1,4 +1,3 @@
-const main = document.getElementById('main');
 const overlay = document.getElementById('overlay');
 const menu = document.getElementById('menu')
 const menuContainer = document.getElementById('menu-container');
@@ -19,7 +18,7 @@ document.querySelector('.hamburger').addEventListener('click', function(e){
         menu.style.opacity = 1;
         menu.style.overflow = 'auto';
         menu.style.pointerEvents = 'auto';
-        // main.classList.add('noscroll');
+        document.body.classList.add('noscroll');
         overlay.style.zIndex = 4;
     }
         
@@ -47,7 +46,7 @@ menu.addEventListener('click', (e) => {
         overlay.style.transform = 'translateX(-250vh) translateY(-250vh)';
         menu.style.overflow = 'hidden';
         menu.style.pointerEvents = 'none';
-        main.classList.remove('noscroll');
+        document.body.classList.remove('noscroll');
 
         menuContainer.classList.add('menu-closed');
 
