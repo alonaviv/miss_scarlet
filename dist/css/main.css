@@ -164,10 +164,18 @@
     #navbar-middle .nav-links-container .nav-links {
       display: flex;
       justify-content: space-around;
-      width: 80%;
-      padding: 0 15rem 0 0; }
-      #navbar-middle .nav-links-container .nav-links i {
-        color: #FFC300; }
+      width: 90%; }
+      #navbar-middle .nav-links-container .nav-links a {
+        display: block;
+        background-color: rgba(174, 61, 223, 0.8);
+        display: flex;
+        padding: 5rem 0;
+        width: 25%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40%; }
+        #navbar-middle .nav-links-container .nav-links a i {
+          color: #FFC300; }
 
 #navbar-bottom .logo-tagline {
   text-align: center; }

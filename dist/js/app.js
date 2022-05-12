@@ -21,18 +21,6 @@ document.querySelector('.hamburger').addEventListener('click', function(e){
         document.body.classList.add('noscroll');
         overlay.style.zIndex = 4;
     }
-        
-
-        // Get the actual height of menuContent, in order
-        // for menuContainer to match it and allow scrolling until
-        // the bottom of the content
-        // const menuContentStyle = window.getComputedStyle(menu);
-        // const menuTopMargin = parseFloat(menuContentStyle['marginTop']);
-        // const menuTopPadding = parseFloat(menuContentStyle['paddingTop']);
-        // const totalHeight = menu.offsetHeight + menuTopMargin + menuTopPadding;
-        // menuContainer.style.height = `${totalHeight}px`;
-
-        
 });
 
 //Close menu overlay (by clicking everywhere but content)
@@ -41,20 +29,13 @@ menu.addEventListener('click', (e) => {
     e.target.classList.contains('close-btn') || 
     e.target.id === 'menu-content' ||
     e.target.id === 'menu'){
-        // menuContainer.style.height = '100vh';
         menuContainer.style.opacity = 0;
         overlay.style.transform = 'translateX(-250vh) translateY(-250vh)';
         menu.style.overflow = 'hidden';
         menu.style.pointerEvents = 'none';
         document.body.classList.remove('noscroll');
-
         menuContainer.classList.add('menu-closed');
 
-
-    //     setTimeout(()=>{
-    //         menu.style.opacity = 0;
-    //         menuContainer.style.opacity = 1;
-    //         console.log("Running timeout");}, 1000);
     }
 });
 
